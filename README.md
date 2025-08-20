@@ -65,7 +65,6 @@ public class ViajeCamion {
         double litrosModelo = (d1 + d2 + d3) / kmlModelo;
 
         // === 10) Índice de eficiencia (score) ===
-        // Usando los pesos w1 = 0.25, w2 = 0.25, w3 = 0.25, w4 = 0.25 (puedes cambiarlos si el taller especifica otros)
         double w1 = 0.25, w2 = 0.25, w3 = 0.25, w4 = 0.25;
         double score = w1 * (1 / costoPorKm) + w2 * kmltotal + w3 * (1 / COporKm2) + w4 * (1 / (1 + sigma));
 
